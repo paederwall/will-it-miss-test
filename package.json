@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "dev": "parcel serve src/index.html",
-    "build": "parcel build src/index.html",
-    "test": "node tests/*.js"
+    "build": "npm run test && parcel build src/index.html",
+    "test": "node tests/nasa-feed.test.js"
   },
   "browserslist": [
     "last 1 Chrome versions"
